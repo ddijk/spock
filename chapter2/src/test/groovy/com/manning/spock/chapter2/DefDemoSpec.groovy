@@ -1,10 +1,8 @@
 package com.manning.spock.chapter2
 
-import spock.lang.*
-
 class DefDemoSpec extends spock.lang.Specification{
 	
-	public void trivialSum1() {
+	void trivialSum1() {
 		when: "number is one"
 		int number =1;
 

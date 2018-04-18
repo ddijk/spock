@@ -14,7 +14,7 @@ class BetterSpec extends spock.lang.Specification{
 		billing.charge(client,150);
 
 		then: "Client should have the bonus option active"
-		client.hasBonus() == true
+		client.hasBonus()
 	}
 	
 	def "Client loses bones is he does not accept the transaction"() {
@@ -25,7 +25,7 @@ class BetterSpec extends spock.lang.Specification{
 		client.rejectsCharge();
 
 		then: "Client should have the bonus option inactive"
-		client.hasBonus() == false 
+		!client.hasBonus()
 		
 	}
 }

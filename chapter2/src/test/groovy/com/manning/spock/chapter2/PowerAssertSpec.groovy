@@ -8,7 +8,7 @@ import spock.lang.*
  * @author Kostis
  *
  */
-@Ignore
+//@Ignore
 class PowerAssertSpec extends spock.lang.Specification{
 
 	def "Demo for Spock assert numbers"() {
